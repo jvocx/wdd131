@@ -1,13 +1,13 @@
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 :root {
     --primary-color: #1f3c88;
     --secondary-color: #f4f4f4;
+    --card-title-color: #1f4e79;
     --accent-color: #ffb703;
     --text-color: #222;
 }
@@ -15,28 +15,24 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
     background-color: var(--secondary-color);
+    color: var(--text-color);
     line-height: 1.6;
 }
 
-
 header {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     padding: 1.5rem 1rem;
     text-align: center;
 }
 
-
 #course-title {
     display: block;
-
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
-
 
 nav {
     display: flex;
@@ -45,13 +41,12 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: #fff;
     text-decoration: none;
     font-weight: 700;
     padding: 0.5rem 0.75rem;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
-
 
 nav a:hover {
     background-color: var(--accent-color);
@@ -59,51 +54,66 @@ nav a:hover {
     border-radius: 4px;
 }
 
-
 main {
     max-width: 900px;
     margin: 2rem auto;
-    padding: 0 1rem;
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
 }
 
 main h1 {
     text-align: center;
-    margin-bottom: 2rem;
-}
-
-
-main {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
 }
 
 .card {
-    background-color: white;
-    padding: 1.25rem;
-    border-radius: 8px;
+    background-color: #fff;
+    border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+
+    display: grid;
+    grid-template-columns: 1fr 220px;
+    grid-template-areas:
+        "title title"
+        "text image";
+    gap: 1.5rem;
 }
 
 .card h2 {
-    margin-bottom: 0.75rem;
-    color: var(--primary-color);
+    grid-area: title;
+    background-color: var(--card-title-color);
+    color: #fff;
+    padding: 0.75rem;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .card p {
-    margin-bottom: 1rem;
+    grid-area: text;
+    align-self: start;
 }
 
 .card img {
-    width: 100%;
-    height: auto;
-    border-radius: 6px;
+    grid-area: image;
+    max-width: 200px;
+    border-radius: 8px;
+    align-self: start;
+    justify-self: center;
 }
 
+.card:nth-of-type(2) {
+    grid-template-columns: 220px 1fr;
+    grid-template-areas:
+        "title title"
+        "image text";
+}
 
 footer {
     background-color: var(--primary-color);
-    color: white;
+    color: #fff;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
@@ -111,4 +121,20 @@ footer {
 
 footer p {
     margin: 0.25rem 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "text"
+            "image";
+        text-align: center;
+    }
+
+    .card img {
+        justify-self: center;
+        margin-top: 1rem;
+    }
 }
