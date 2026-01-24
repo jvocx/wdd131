@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fortaleza, Brazil - climate, attractions, and culture">
+    <title>Fortaleza, Brazil</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
+    <script src="place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Fortaleza, Brazil</h1>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <picture>
+                <source srcset="wdd131/images/fortalezacity.webp" media="(max-width: 600px)">
+                <source srcset="wdd131/images/fortalezacity.webp" media="(min-width: 601px)">
+                <img src="wdd131/images/fortalezacity.webp" alt="Beach in Fortaleza, Brazil">
+            </picture>
+
+        </section>
+
+
+        <section class="about">
+            <h2>About Fortaleza</h2>
+            <p>
+                Fortaleza is the capital of the state of Ceará, located in northeastern Brazil.
+                It is known for its beautiful beaches, warm climate, and vibrant culture.
+            </p>
+        </section>
+
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <p>Temperature: <span id="temperature">30</span> °C</p>
+            <p>Wind Speed: <span id="windspeed">10</span> km/h</p>
+            <p>Wind Chill: <span id="windchill">--</span></p>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            © <span id="year"></span> | Fortaleza, Brazil <br>
+            Last Modified: <span id="lastModified"></span>
+        </p>
+    </footer>
+
+</body>
+
+</html>
