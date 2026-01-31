@@ -18,7 +18,7 @@ const temples = [
         location: "Laie, Hawaii",
         dedicated: "1919-11-27",
         area: 47000,
-        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg"
+        imageUrl: "https://churchofjesuschristtemples.org/assets/img/temples/laie-hawaii-temple/laie-hawaii-temple-7370-main.jpg    "
     },
     {
         templeName: "Fortaleza Brazil Temple",
