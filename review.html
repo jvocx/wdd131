@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation</title>
+    <meta name="description" content="Confirmation page for the Product Review Form with a review counter.">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Thank You!</h1>
+    </header>
+    <main class="confirmation-main">
+        <div class="card">
+            <h2>Review Submitted Successfully</h2>
+            <p>Your feedback is very important to us and helps improve our products.</p>
+
+            <div id="counter-container">
+                <p>Total reviews submitted: <span id="reviewCount">0</span></p>
+            </div>
+
+            <a href="form.html" class="btn-return">Submit another review</a>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Product Review | Your Name</p>
+    </footer>
+</body>
+
+</html>
