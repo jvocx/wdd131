@@ -1,148 +1,114 @@
-:root {
-    --primary-color: #003366;
-    --secondary-color: #f4f4f4;
-    --text-color: #333;
-    --required-color: #d00000;
-    --border-color: #ccc;
-    --font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-}
-
-
+/* ===== RESET BÁSICO ===== */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    font-family: var(--font-family);
-    color: var(--text-color);
-    line-height: 1.6;
-    margin: 0;
-    padding: 20px;
-    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.5;
 }
 
+/* ===== HEADER ===== */
 header {
-    text-align: center;
-    padding: 1rem;
-    background-color: var(--primary-color);
+    background-color: #003366;
     color: white;
-    margin-bottom: 20px;
+    padding: 1rem;
+    text-align: center;
 }
 
+/* ===== MAIN ===== */
 main {
     max-width: 600px;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 1rem;
+}
 
+/* ===== FORM ===== */
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 fieldset {
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 20px;
+    border: none;
 }
 
 legend {
-    font-weight: bold;
     font-size: 1.2rem;
-    padding: 0 10px;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
+/* ===== LABELS ===== */
 label {
     display: block;
-    margin-top: 15px;
-    font-weight: 600;
+    margin-top: 1rem;
+    font-weight: bold;
 }
-
 
 .required {
-    color: var(--required-color);
-    font-size: 0.9rem;
+    color: red;
 }
 
-input[type="text"],
-input[type="date"],
+/* ===== INPUTS ===== */
 select,
+input[type="date"],
+input[type="text"],
 textarea {
     width: 100%;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px solid var(--border-color);
+    padding: 0.6rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
     border-radius: 4px;
 }
 
-
-.rating-container,
-.checkbox-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    background-color: var(--secondary-color);
-    padding: 10px;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-
-.rating-container label,
-.checkbox-container label {
-    display: flex;
-    align-items: center;
-    margin-top: 0;
-    font-weight: normal;
-    cursor: pointer;
-}
-
+/* RADIO E CHECKBOX */
 input[type="radio"],
 input[type="checkbox"] {
-    margin-right: 8px;
-    width: 18px;
-    height: 18px;
+    margin-top: 0.8rem;
+    margin-right: 0.4rem;
 }
 
+/* TEXTAREA */
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
 
-input[type="submit"],
-.btn-return {
-    display: block;
+/* ===== BUTTON ===== */
+input[type="submit"] {
+    margin-top: 1.5rem;
     width: 100%;
-    padding: 12px;
-    background-color: var(--primary-color);
-    color: white;
+    padding: 0.8rem;
     border: none;
     border-radius: 4px;
-    font-size: 1.1rem;
-    font-weight: bold;
+    background-color: #003366;
+    color: white;
+    font-size: 1rem;
     cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 10px;
 }
 
-input[type="submit"]:hover,
-.btn-return:hover {
-    background-color: #00509e;
+input[type="submit"]:hover {
+    background-color: #0055aa;
 }
 
-
-.card {
-    text-align: center;
-    padding: 40px;
-    border: 1px solid var(--border-color);
-    border-radius: 8px;
-    background-color: var(--secondary-color);
-}
-
-#counter-container {
-    margin: 20px 0;
-    font-size: 1.2rem;
-    color: var(--primary-color);
-    font-weight: bold;
-}
-
-
+/* ===== FOOTER ===== */
 footer {
     text-align: center;
-    margin-top: 30px;
-    padding: 10px;
-    border-top: 1px solid var(--border-color);
+    padding: 1rem;
+    color: #666;
     font-size: 0.9rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    main {
+        margin: 1rem;
+    }
 }
