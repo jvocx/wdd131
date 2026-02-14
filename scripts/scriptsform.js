@@ -1,9 +1,9 @@
-
+// FOOTER YEAR
 document.getElementById("currentYear").textContent =
     new Date().getFullYear();
 
 
-
+// PRODUCT ARRAY
 const products = [
     { id: "fc-1888", name: "Flux Capacitor" },
     { id: "fc-2050", name: "Power Laces" },
@@ -12,13 +12,12 @@ const products = [
     { id: "jj-1969", name: "Hoverboard" }
 ];
 
+// Populate select dynamically
 const productSelect = document.getElementById("productName");
 
 products.forEach(product => {
     const option = document.createElement("option");
-
-    option.value = product.id;   // 
+    option.value = product.id;
     option.textContent = product.name;
-
     productSelect.appendChild(option);
 });

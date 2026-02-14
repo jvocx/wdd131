@@ -1,4 +1,3 @@
-/* ===== RESET BÁSICO ===== */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +11,6 @@ body {
     line-height: 1.5;
 }
 
-/* ===== HEADER ===== */
 header {
     background-color: #003366;
     color: white;
@@ -20,14 +18,12 @@ header {
     text-align: center;
 }
 
-/* ===== MAIN ===== */
 main {
     max-width: 600px;
     margin: 2rem auto;
     padding: 1rem;
 }
 
-/* ===== FORM ===== */
 form {
     background-color: white;
     padding: 1.5rem;
@@ -45,7 +41,6 @@ legend {
     margin-bottom: 1rem;
 }
 
-/* ===== LABELS ===== */
 label {
     display: block;
     margin-top: 1rem;
@@ -56,7 +51,6 @@ label {
     color: red;
 }
 
-/* ===== INPUTS ===== */
 select,
 input[type="date"],
 input[type="text"],
@@ -68,20 +62,17 @@ textarea {
     border-radius: 4px;
 }
 
-/* RADIO E CHECKBOX */
 input[type="radio"],
 input[type="checkbox"] {
     margin-top: 0.8rem;
     margin-right: 0.4rem;
 }
 
-/* TEXTAREA */
 textarea {
     resize: vertical;
     min-height: 80px;
 }
 
-/* ===== BUTTON ===== */
 input[type="submit"] {
     margin-top: 1.5rem;
     width: 100%;
@@ -98,7 +89,6 @@ input[type="submit"]:hover {
     background-color: #0055aa;
 }
 
-/* ===== FOOTER ===== */
 footer {
     text-align: center;
     padding: 1rem;
@@ -106,7 +96,6 @@ footer {
     font-size: 0.9rem;
 }
 
-/* ===== RESPONSIVE ===== */
 @media (max-width: 600px) {
     main {
         margin: 1rem;

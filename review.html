@@ -7,7 +7,9 @@
 
     <title>Review Submitted</title>
 
-    <meta name="description" content="Review confirmation page">
+    <meta name="description"
+        content="Confirmation page displaying successful submission of the product review and total reviews submitted.">
+
     <meta name="author" content="João Victor">
 
     <script defer>
@@ -27,6 +29,7 @@
         });
 
     </script>
+
 </head>
 
 <body>
@@ -45,6 +48,15 @@
 
         <a href="form.html">Submit another review</a>
     </main>
+
+    <footer>
+        <p>&copy; <span id="currentYear"></span> | Product Review | João Victor</p>
+    </footer>
+
+    <script>
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
 
 </body>
 
